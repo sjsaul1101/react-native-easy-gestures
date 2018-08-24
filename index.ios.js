@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppRegistry, Image, View } from 'react-native';
+import { AppRegistry, Image, Text, View } from 'react-native';
 
 import Gestures from './lib/';
 
@@ -51,18 +51,10 @@ const example = () => (
         // console.log('On Scale End');
       }}
     >
-      <Image
-        source={photo}
-        style={{
-          width: 300,
-          height: 400,
-        }}
-      />
+      <Text>
+        RTL Support
+      </Text>
     </Gestures>
-
-    <Gestures draggable={true} scalable={true} rotatable={true} onRelease={(event, styles) => { console.log(styles); }} > <Image source={photo} style={{ width: 200, height: 200, resizeMode: "contain" }} /> </Gestures>
-
-
   </View>
 );
 
